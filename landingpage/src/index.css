@@ -12,6 +12,13 @@ font-family: Arial, Helvetica, sans-serif;
 
 a{text-decoration: none; font-weight: bold;}
 
+.navbar-dark .navbar-toggler-icon {
+    color: black !important;
+    background-image: url("https://i.ibb.co/6ZwGN0h/hamburguer.png") !important;
+}
+
+
+
 
 /* Pequenos celulares */
 @media screen and (max-width: 480px) {
@@ -19,7 +26,19 @@ a{text-decoration: none; font-weight: bold;}
     .nav a{width: 100%; }
     .header{display: flex;flex-direction: column; }
     .buttonMob{order: 1px; text-align: right; padding: 5px 5% 5px 0;}
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        background-color: #CC0543 !important;
+        margin-top: 10px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #f8f9fa !important;
+        margin: auto;
+    }
 }
+
 
 /* Grandes celulares */
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -27,8 +46,20 @@ a{text-decoration: none; font-weight: bold;}
     .nav a{width: 100%; }
     .header{display: flex;flex-direction: column; }
     .buttonMob{order: 1px; text-align: right; padding: 5px 5% 5px 0;}
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        background-color: #CC0543 !important;
+        margin-top: 10px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #f8f9fa !important;
+        margin: auto;
+    }
 
 }
+
 
 /* Pequenos laptops */
 @media screen and (min-width: 769px) and (max-width: 1199px) {
@@ -36,7 +67,29 @@ a{text-decoration: none; font-weight: bold;}
         .nav a{width: 25%; }
 
     .buttonMob{display: none;}
-       
+    .nav-link {
+        color: white !important;
+    } 
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-white {
+        margin: 0px 7.5vw;
+    } 
+    a#cadastrar {
+        background-color: #CC0543;
+        padding: 10px 20px;
+        border-radius: 6px;
+        color: white !important;
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        background-color: #CC0543 !important;
+        margin-top: 10px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #f8f9fa;
+        margin: auto;
+    }
 }
 
 /* Laptops maiores e monitores de mesa */
@@ -46,5 +99,18 @@ a{text-decoration: none; font-weight: bold;}
         .nav a{width: 25%; }
     
     .buttonMob{display: none;}
+    .nav-link {
+        color: #CC0543 !important;
+    }
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-white {
+        margin: 0px 7.5vw;
+    }
+
+    a#cadastrar {
+        background-color: #CC0543;
+        padding: 10px 20px;
+        border-radius: 6px;
+        color: white !important;
+    }
     
 }
